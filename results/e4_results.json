@@ -1,0 +1,86 @@
+{
+  "dp_eps_0.1": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    },
+    {
+      "round": 2,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    }
+  ],
+  "dp_eps_0.5": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    },
+    {
+      "round": 2,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    }
+  ],
+  "dp_eps_1.0": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    },
+    {
+      "round": 2,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    }
+  ],
+  "dp_eps_5.0": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    },
+    {
+      "round": 2,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    }
+  ],
+  "dp_eps_10.0": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    },
+    {
+      "round": 2,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    }
+  ],
+  "dp_eps_inf": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    },
+    {
+      "round": 2,
+      "global_auprc": 0.0,
+      "num_participating": 5,
+      "num_accepted": 5
+    }
+  ]
+}

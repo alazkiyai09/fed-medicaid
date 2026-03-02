@@ -1,0 +1,21 @@
+# E4: Differential Privacy Trade-off
+# Sweeps ε ∈ {0.1, 0.5, 1.0, 5.0, 10.0, ∞} (6 runs)
+
+experiment:
+  name: "E4_dp_tradeoff"
+  description: "Privacy-accuracy trade-off with varying epsilon"
+
+strategy: "signguard"
+signguard: { enabled: true }
+
+epsilon_values:
+  - 0.1    # Very strong privacy
+  - 0.5    # Strong privacy
+  - 1.0    # HIPAA-grade
+  - 5.0    # Moderate
+  - 10.0   # Weak
+  - .inf   # No DP (baseline)
+
+privacy:
+  delta: 1.0e-5
+  max_grad_norm: 1.0

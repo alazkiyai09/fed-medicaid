@@ -1,0 +1,88 @@
+Metadata-Version: 2.4
+Name: fed-medicaid
+Version: 0.1.0
+Summary: Federated learning fraud detection with SignGuard defense for Medicaid provider spending
+Author: Azka Fadli Prasetyo
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: polars>=1.0.0
+Requires-Dist: pyarrow>=15.0.0
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: scipy>=1.12.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: torch>=2.2.0
+Requires-Dist: xgboost>=2.0.0
+Requires-Dist: scikit-learn>=1.4.0
+Requires-Dist: ecdsa>=0.19.0
+Requires-Dist: cryptography>=42.0.0
+Requires-Dist: flwr>=1.7.0
+Requires-Dist: opacus>=1.4.0
+Requires-Dist: mlflow>=2.10.0
+Requires-Dist: matplotlib>=3.8.0
+Requires-Dist: seaborn>=0.13.0
+Requires-Dist: plotly>=5.18.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.23.0; extra == "dev"
+Requires-Dist: ruff>=0.3.0; extra == "dev"
+Requires-Dist: mypy>=1.8.0; extra == "dev"
+
+# FedMedicaid — Federated Learning Fraud Detection with SignGuard
+
+**SignGuard: ECDSA-Based Byzantine Defense for Federated Healthcare Fraud Detection — Evidence from 227M Medicaid Claims**
+
+## Overview
+
+FedMedicaid demonstrates that federated learning can train fraud detection models across state-partitioned Medicaid data without sharing raw claims, and that **SignGuard** — a novel ECDSA signature-based defense mechanism — can protect this process from poisoning attacks.
+
+### Key Features
+
+- **Natural Federation:** ~53 US states as FL clients (real non-IID partitioning)
+- **SignGuard Defense:** ECDSA signatures + statistical validation + EMA reputation system
+- **5 Attack Simulations:** Random noise, model poisoning, label flipping, free rider, Sybil
+- **Differential Privacy:** Gaussian mechanism with configurable ε
+- **5 Experiments:** Centralized vs. FL, defense comparison, attack robustness (5×6×3), DP trade-off, scalability
+
+## Quick Start
+
+```bash
+pip install -e ".[dev]"
+
+# Run tests
+make test
+
+# Run experiments
+make run-e1   # Centralized vs. Federated
+make run-e2   # Defense comparison
+make run-e3   # Attack robustness matrix
+make run-e4   # DP trade-off sweep
+make run-e5   # Scalability analysis
+```
+
+## Project Structure
+
+```
+fed-medicaid/
+├── configs/           # Experiment configurations
+├── src/
+│   ├── data/          # State partitioning, splits, data loaders
+│   ├── federation/    # Server, client, models, strategies, runner
+│   ├── signguard/     # ECDSA keys, signing, verification, reputation
+│   ├── attacks/       # 5 attack implementations
+│   ├── privacy/       # Gaussian DP mechanism + accountant
+│   └── evaluation/    # Metrics + visualization plots
+├── experiments/       # Per-experiment runner scripts
+├── tests/             # 7 test modules
+└── results/           # Output from experiments
+```
+
+## Dependencies
+
+- **Depends on:** Project 1 (MedicaidGuard) feature engineering pipeline
+- **Data:** HHS Medicaid Provider Spending (227M records)
+- **Stack:** PyTorch, Flower, ECDSA, Polars, MLflow
+
+## License
+
+MIT

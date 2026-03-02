@@ -1,0 +1,28 @@
+# E2: Defense Comparison (clean conditions)
+# Compares: No defense, Krum, TrimmedMean, FoolsGold, SignGuard (5 runs)
+
+experiment:
+  name: "E2_defense_comparison"
+  description: "Compare aggregation strategies under clean (no attack) conditions"
+
+runs:
+  - name: "no_defense"
+    strategy: "fedavg"
+    signguard: { enabled: false }
+
+  - name: "krum"
+    strategy: "krum"
+    signguard: { enabled: false }
+
+  - name: "trimmed_mean"
+    strategy: "trimmed_mean"
+    trimmed_mean: { trim_ratio: 0.1 }
+    signguard: { enabled: false }
+
+  - name: "foolsgold"
+    strategy: "foolsgold"
+    signguard: { enabled: false }
+
+  - name: "signguard"
+    strategy: "signguard"
+    signguard: { enabled: true }

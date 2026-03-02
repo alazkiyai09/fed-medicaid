@@ -1,0 +1,34 @@
+{
+  "random_poison_vs_fedavg_int0.1": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 10,
+      "num_accepted": 10
+    }
+  ],
+  "random_poison_vs_signguard_int0.1": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 10,
+      "num_accepted": 5
+    }
+  ],
+  "sybil_vs_fedavg_int0.1": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 10,
+      "num_accepted": 10
+    }
+  ],
+  "sybil_vs_signguard_int0.1": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 10,
+      "num_accepted": 10
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fed-medicaid"
+version = "0.1.0"
+description = "Federated learning fraud detection with SignGuard defense for Medicaid provider spending"
+authors = [{ name = "Azka Fadli Prasetyo" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # Core
+    "polars>=1.0.0",
+    "pyarrow>=15.0.0",
+    "numpy>=1.26.0",
+    "scipy>=1.12.0",
+    "pyyaml>=6.0",
+
+    # ML
+    "torch>=2.2.0",
+    "xgboost>=2.0.0",
+    "scikit-learn>=1.4.0",
+
+    # Cryptography
+    "ecdsa>=0.19.0",
+    "cryptography>=42.0.0",
+
+    # FL Framework
+    "flwr>=1.7.0",
+
+    # Privacy
+    "opacus>=1.4.0",
+
+    # Experiment tracking
+    "mlflow>=2.10.0",
+
+    # Visualization
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    "plotly>=5.18.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.3.0",
+    "mypy>=1.8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

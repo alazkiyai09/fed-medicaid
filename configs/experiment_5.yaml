@@ -1,0 +1,16 @@
+# E5: Scalability Analysis
+# Varies client participation rate: 20%, 50%, 80%, 100% (4 runs)
+
+experiment:
+  name: "E5_scalability"
+  description: "Impact of client participation rate on convergence and performance"
+
+strategy: "signguard"
+signguard: { enabled: true }
+privacy: { enabled: false }
+
+participation_rates:
+  - 0.20
+  - 0.50
+  - 0.80
+  - 1.00

@@ -1,0 +1,34 @@
+{
+  "fedavg": [
+    {
+      "round": 1,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 5.820799112319946,
+      "num_participating": 5
+    },
+    {
+      "round": 2,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 11.639295101165771,
+      "num_participating": 5
+    }
+  ],
+  "fedprox": [
+    {
+      "round": 1,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 3.8842010498046875,
+      "num_participating": 5
+    },
+    {
+      "round": 2,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 11.92277479171753,
+      "num_participating": 5
+    }
+  ]
+}

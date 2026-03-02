@@ -1,0 +1,82 @@
+{
+  "no_defense": [
+    {
+      "round": 1,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 5.118775367736816,
+      "num_participating": 5
+    },
+    {
+      "round": 2,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 8.849888324737549,
+      "num_participating": 5
+    }
+  ],
+  "krum": [
+    {
+      "round": 1,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 2.9501242637634277,
+      "num_participating": 5
+    },
+    {
+      "round": 2,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 11.418194055557251,
+      "num_participating": 5
+    }
+  ],
+  "trimmed_mean": [
+    {
+      "round": 1,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 4.990980386734009,
+      "num_participating": 5
+    },
+    {
+      "round": 2,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 11.616754293441772,
+      "num_participating": 5
+    }
+  ],
+  "foolsgold": [
+    {
+      "round": 1,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 4.69896674156189,
+      "num_participating": 5
+    },
+    {
+      "round": 2,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 11.162222146987915,
+      "num_participating": 5
+    }
+  ],
+  "signguard": [
+    {
+      "round": 1,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 3.908595323562622,
+      "num_participating": 5
+    },
+    {
+      "round": 2,
+      "global_loss": NaN,
+      "global_auprc": 0.0,
+      "duration": 10.80876874923706,
+      "num_participating": 5
+    }
+  ]
+}

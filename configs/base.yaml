@@ -1,0 +1,58 @@
+# FedMedicaid Base Configuration
+# All thresholds and hyperparameters from spec §5-9
+
+data:
+  features_dir: "data/features"          # Symlink to P1 feature matrices
+  partitioned_dir: "data/partitioned"    # Per-state parquet files
+  splits_dir: "data/splits"             # Train/val/test per state
+  npi_registry_path: "data/external/npi_registry.parquet"
+  min_providers_per_state: 100
+
+federation:
+  num_rounds: 100
+  local_epochs: 5
+  batch_size: 256
+  learning_rate: 0.001
+  optimizer: "adam"
+  fedprox_mu: 0.01
+  participation_rate: 1.0              # Fraction of clients per round
+
+model:
+  type: "mlp"                           # "mlp" or "xgboost"
+  input_dim: 38
+  hidden_dims: [128, 64, 32]
+  dropout: 0.3
+  use_batch_norm: true
+
+signguard:
+  enabled: true
+  # Statistical validation thresholds (spec §6.5)
+  l2_norm_threshold: 100.0             # Absolute L2 norm bound
+  relative_norm_threshold: 5.0        # Relative to round median
+  cosine_threshold: -0.5              # Minimum cosine similarity
+  # Reputation system (spec §6.6)
+  reputation_alpha: 0.3               # EMA smoothing factor
+  initial_reputation: 1.0
+  exclusion_threshold: 0.5            # rep < 0.5 → excluded
+  investigation_threshold: 0.2        # rep < 0.2 → flagged
+  # Weight mapping
+  full_weight_threshold: 0.8          # rep > 0.8 → full weight
+
+privacy:
+  enabled: false
+  epsilon: .inf                        # Total privacy budget (inf = no DP)
+  delta: 1.0e-5
+  max_grad_norm: 1.0
+
+evaluation:
+  metrics:
+    - "auprc"
+    - "auroc"
+    - "recall_at_50"
+    - "recall_at_100"
+    - "recall_at_500"
+  log_every_n_rounds: 5
+
+experiment_tracking:
+  backend: "mlflow"                    # "mlflow" or "wandb"
+  experiment_name: "fed-medicaid"

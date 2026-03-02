@@ -1,0 +1,25 @@
+# E1: Centralized vs. Federated
+# Compares: Centralized, FedAvg, FedProx, Local-only (4 runs)
+
+experiment:
+  name: "E1_centralized_vs_federated"
+  description: "Baseline comparison of centralized, federated, and local-only training"
+
+runs:
+  - name: "centralized"
+    strategy: "centralized"
+    signguard: { enabled: false }
+    privacy: { enabled: false }
+
+  - name: "fedavg"
+    strategy: "fedavg"
+    signguard: { enabled: false }
+    privacy: { enabled: false }
+
+  - name: "fedprox"
+    strategy: "fedprox"
+    federation: { fedprox_mu: 0.01 }
+    signguard: { enabled: false }
+    privacy: { enabled: false }
+
+# (Removed local_only for faster E1 demonstration)

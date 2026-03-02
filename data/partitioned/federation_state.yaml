@@ -1,0 +1,173 @@
+clients:
+  AK:
+    count: 1858
+    weight: 0.003066254532132136
+  AL:
+    count: 6550
+    weight: 0.010809454889916841
+  AR:
+    count: 6908
+    weight: 0.011400261737335196
+  AZ:
+    count: 10647
+    weight: 0.017570727666098414
+  CA:
+    count: 52782
+    weight: 0.08710605312970851
+  CO:
+    count: 12178
+    weight: 0.020097334602962945
+  CT:
+    count: 7868
+    weight: 0.012984548255552017
+  DC:
+    count: 1354
+    weight: 0.002234504110068306
+  DE:
+    count: 1864
+    weight: 0.0030761563228709913
+  FL:
+    count: 29972
+    weight: 0.049462745337494285
+  GA:
+    count: 3628
+    weight: 0.005987282800094397
+  GU:
+    count: 108
+    weight: 0.00017823223329939219
+  HI:
+    count: 2583
+    weight: 0.00426272091307713
+  IA:
+    count: 6863
+    weight: 0.011325998306793783
+  ID:
+    count: 3321
+    weight: 0.00548064117395631
+  IL:
+    count: 44302
+    weight: 0.07311152221879327
+  IN:
+    count: 9988
+    weight: 0.016483180983280825
+  KS:
+    count: 5274
+    weight: 0.008703674059453652
+  KY:
+    count: 10244
+    weight: 0.016905657388138644
+  LA:
+    count: 11495
+    weight: 0.01897018075718994
+  MA:
+    count: 19346
+    weight: 0.03192667393898187
+  MD:
+    count: 13007
+    weight: 0.02146543202338143
+  ME:
+    count: 2552
+    weight: 0.004211561660926379
+  MI:
+    count: 16727
+    weight: 0.027604542281471606
+  MN:
+    count: 8713
+    weight: 0.014379050451274113
+  MO:
+    count: 15656
+    weight: 0.025837072634585966
+  MS:
+    count: 6208
+    weight: 0.0102450528178021
+  MT:
+    count: 3426
+    weight: 0.005653922511886274
+  NC:
+    count: 16856
+    weight: 0.02781743078235699
+  ND:
+    count: 1178
+    weight: 0.0019440515817285555
+  NE:
+    count: 3263
+    weight: 0.00538492386348071
+  NH:
+    count: 2046
+    weight: 0.0033765106419495964
+  NJ:
+    count: 15992
+    weight: 0.02639157291596185
+  NM:
+    count: 4186
+    weight: 0.006908149338807923
+  NV:
+    count: 8947
+    weight: 0.014765220290089462
+  NY:
+    count: 59321
+    weight: 0.09789735473660412
+  OH:
+    count: 20967
+    weight: 0.034601807736929224
+  OK:
+    count: 5797
+    weight: 0.009566780152190524
+  OR:
+    count: 6629
+    weight: 0.010939828467978434
+  PA:
+    count: 30709
+    weight: 0.05067901529991699
+  PR:
+    count: 9168
+    weight: 0.015129936248970627
+  RI:
+    count: 6067
+    weight: 0.010012360735439004
+  SC:
+    count: 8111
+    weight: 0.013385570780475649
+  SD:
+    count: 1663
+    weight: 0.002744446333119345
+  TN:
+    count: 12480
+    weight: 0.020595724736818654
+  TX:
+    count: 31254
+    weight: 0.05157842795869633
+  UT:
+    count: 4889
+    weight: 0.008068309153710448
+  VA:
+    count: 15631
+    weight: 0.02579581517317407
+  VI:
+    count: 124
+    weight: 0.00020463700860300587
+  VT:
+    count: 1796
+    weight: 0.002963936027830633
+  WA:
+    count: 8128
+    weight: 0.013413625854235738
+  WI:
+    count: 10281
+    weight: 0.01696671843102825
+  WV:
+    count: 3746
+    weight: 0.006182018017958548
+  WY:
+    count: 1300
+    weight: 0.00214538799341861
+excluded_states:
+- AA
+- AE
+- AP
+- BC
+- CE
+- FM
+- 'ON'
+num_clients: 54
+total_providers: 605951

@@ -1,0 +1,66 @@
+{
+  "participation_20pct": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 10,
+      "num_accepted": 10,
+      "duration": 12.746392011642456
+    },
+    {
+      "round": 2,
+      "global_auprc": 0.0,
+      "num_participating": 10,
+      "num_accepted": 10,
+      "duration": 19.34848189353943
+    }
+  ],
+  "participation_50pct": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 27,
+      "num_accepted": 27,
+      "duration": 42.01338815689087
+    },
+    {
+      "round": 2,
+      "global_auprc": 0.0,
+      "num_participating": 27,
+      "num_accepted": 27,
+      "duration": 32.307936906814575
+    }
+  ],
+  "participation_80pct": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 43,
+      "num_accepted": 43,
+      "duration": 57.964314222335815
+    },
+    {
+      "round": 2,
+      "global_auprc": 0.0,
+      "num_participating": 43,
+      "num_accepted": 43,
+      "duration": 78.13021850585938
+    }
+  ],
+  "participation_100pct": [
+    {
+      "round": 1,
+      "global_auprc": 0.0,
+      "num_participating": 54,
+      "num_accepted": 54,
+      "duration": 105.99610924720764
+    },
+    {
+      "round": 2,
+      "global_auprc": 0.0,
+      "num_participating": 54,
+      "num_accepted": 54,
+      "duration": 80.55612802505493
+    }
+  ]
+}
